@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Regresion1.0" />
+        <module name="Regression1.0" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Regresion1.0" target="1.8" />
+      <module name="Regression1.0" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

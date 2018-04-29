@@ -8,13 +8,13 @@ import repository.FileRepo;
 
 import java.util.*;
 
-public class Service {
+public class EvolutionaryAlgorithmService {
 
     public FileRepo repo;
     private ArrayList<Double> mutationVector;
     public static ArrayList<Double> minHistory;
 
-    public Service(FileRepo repo){
+    public EvolutionaryAlgorithmService(FileRepo repo){
         this.repo = repo;
         minHistory = new ArrayList<>();
     }
