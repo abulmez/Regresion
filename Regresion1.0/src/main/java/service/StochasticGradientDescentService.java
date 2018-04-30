@@ -37,7 +37,7 @@ public class StochasticGradientDescentService {
             factor.add(Math.random());
         }
 
-        for(int i=0;i<numberOfIterations;i++) {
+        for(int i=0;i<numberOfIterations;) {
             Integer row = indexes.get(counter);
             Double error = getError(factor, row, resultColumn);
             factor.set(0, (factor.get(0) - learningRate * error));
@@ -47,8 +47,9 @@ public class StochasticGradientDescentService {
             counter += 1;
             if(counter.equals(repo.getDataMatrixNumberOfRows())){
                 counter = 0;
+                i++;
                 Collections.shuffle(indexes);
-                learningRate/=10;
+                //learningRate/=10;
             }
             /*
             if(counter.equals(1000)){
